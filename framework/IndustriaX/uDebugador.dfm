@@ -1,0 +1,90 @@
+object fmDebugador: TfmDebugador
+  Left = 377
+  Top = 210
+  Width = 736
+  Height = 449
+  Caption = 'Debugador'
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  FormStyle = fsMDIChild
+  OldCreateOrder = False
+  Position = poDefault
+  Visible = True
+  OnClose = FormClose
+  PixelsPerInch = 96
+  TextHeight = 13
+  object pnl1: TPanel
+    Left = 0
+    Top = 0
+    Width = 185
+    Height = 411
+    Align = alLeft
+    TabOrder = 0
+    object lstQuery: TListBox
+      Left = 1
+      Top = 1
+      Width = 183
+      Height = 409
+      Align = alClient
+      ItemHeight = 13
+      TabOrder = 0
+      OnClick = lstQueryClick
+    end
+  end
+  object pnl2: TPanel
+    Left = 185
+    Top = 0
+    Width = 535
+    Height = 411
+    Align = alClient
+    TabOrder = 1
+    object jedEditor: TJvHLEditor
+      Left = 1
+      Top = 1
+      Width = 533
+      Height = 409
+      Cursor = crIBeam
+      Completion.ItemHeight = 13
+      Completion.CRLF = '/n'
+      Completion.Separator = '='
+      TabStops = '3 5'
+      BracketHighlighting.StringEscape = #39#39
+      Align = alClient
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Courier New'
+      Font.Style = []
+      Highlighter = hlSql
+      Colors.Comment.Style = [fsItalic]
+      Colors.Comment.ForeColor = clNavy
+      Colors.Comment.BackColor = clWindow
+      Colors.Number.ForeColor = clNavy
+      Colors.Number.BackColor = clWindow
+      Colors.Strings.ForeColor = clBlue
+      Colors.Strings.BackColor = clWindow
+      Colors.Symbol.ForeColor = clBlack
+      Colors.Symbol.BackColor = clWindow
+      Colors.Reserved.Style = [fsBold]
+      Colors.Reserved.ForeColor = clBlack
+      Colors.Reserved.BackColor = clWindow
+      Colors.Identifier.ForeColor = clBlack
+      Colors.Identifier.BackColor = clWindow
+      Colors.Preproc.ForeColor = clGreen
+      Colors.Preproc.BackColor = clWindow
+      Colors.FunctionCall.ForeColor = clWindowText
+      Colors.FunctionCall.BackColor = clWindow
+      Colors.Declaration.ForeColor = clWindowText
+      Colors.Declaration.BackColor = clWindow
+      Colors.Statement.Style = [fsBold]
+      Colors.Statement.ForeColor = clWindowText
+      Colors.Statement.BackColor = clWindow
+      Colors.PlainText.ForeColor = clWindowText
+      Colors.PlainText.BackColor = clWindow
+    end
+  end
+end

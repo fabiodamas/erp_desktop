@@ -1,0 +1,1 @@
+update unidades set quantidade=1 where quantidade is null

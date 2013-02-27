@@ -1,0 +1,1 @@
+ALTER TABLE  `unidades` ADD  `Quantidade` FLOAT(15,0) NULL

@@ -1,0 +1,1 @@
+ALTER TABLE  `ordem_producao` ADD  `CodigoPedido` FLOAT(15,0) NULL
